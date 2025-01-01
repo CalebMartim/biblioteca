@@ -1,8 +1,7 @@
 #include <vector>
 using namespace std;
 
-template <class T> 
-struct SegTree{
+template <class T> struct SegTree{
   int n; vector<T> t;
   SegTree(int N) {
     n = N;
@@ -13,7 +12,7 @@ struct SegTree{
   }
   void update(int i, T x){
     t[i += n] += x; // !#
-    while(i > 1){
+    while(i > 1) {
         t[i / 2] = merge(t[i], t[i ^ 1]);
         i /= 2;
     }
