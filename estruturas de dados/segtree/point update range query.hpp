@@ -12,7 +12,7 @@ template <class T> struct SegTree{
   }
   void update(int i, T x){
     t[i += n] += x; // !#
-    while(i > 1) {
+    while (i > 1) {
         t[i / 2] = merge(t[i], t[i ^ 1]);
         i /= 2;
     }
