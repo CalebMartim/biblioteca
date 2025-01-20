@@ -30,8 +30,8 @@ void out(string x){cout<<x<<'\n';}
 Tc ...T>void in(T&...x){((cin>>x),...);}
 Tc ...T>void oute(T...x){((cout<<x<<' '),...);}
 Tc ...T>void out(T...x){((oute(x)),...);cout<<'\n';}
-Tc T,Tc _>class ...C>void in(C<T>&...v){(in(v),...);}
 Tc T,Tc _>class C>void in(C<T>&v){for(T &x:v)in(x);}
+Tc T,Tc _>class ...C>void in(C<T>&...v){(in(v),...);}
 Tc T,Tc _>class ...C>void out(C<T>...v){(out(v),...);}
 Tc T,Tc _>class C>void out(C<T>v){for(T x:v)oute(x);cout<<'\n';}
 Tc T,Tc _>class S,Tc _>class C>void in(C<S<T>>&v){for(S<T>&x:v)in(x);}
