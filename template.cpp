@@ -14,6 +14,8 @@ using namespace std;
 #define pll array<ll,2>
 #define Tc template<class
 #define sz(v) (int)size(v)
+#define rbl(x,v) for(auto x:v)
+#define rblr(x,v) for(auto&x:v)
 #define all(v) v.begin(),v.end()
 #define rall(v) v.rbegin(),v.rend()
 #define iter(i,b,e) for(int i=(b);i<(e);++i) 
@@ -30,13 +32,13 @@ void out(string x){cout<<x<<'\n';}
 Tc ...T>void in(T&...x){((cin>>x),...);}
 Tc ...T>void oute(T...x){((cout<<x<<' '),...);}
 Tc ...T>void out(T...x){((oute(x)),...);cout<<'\n';}
-Tc T,Tc _>class C>void in(C<T>&v){for(T &x:v)in(x);}
+Tc T,Tc _>class C>void in(C<T>&v){for(T&x:v)in(x);}
 Tc T,Tc _>class ...C>void in(C<T>&...v){(in(v),...);}
-Tc T,Tc _>class ...C>void out(C<T>...v){(out(v),...);}
 Tc T,Tc _>class C>void out(C<T>v){for(T x:v)oute(x);cout<<'\n';}
+Tc T,Tc _>class ...C>void out(C<T>...v){(out(v),...);}
 Tc T,Tc _>class S,Tc _>class C>void in(C<S<T>>&v){for(S<T>&x:v)in(x);}
 Tc T,Tc _>class S,Tc _>class C>void out(C<S<T>>v){for(S<T>x:v)out(x);}
-// ミク ! 
+
 int main(){
   cin.tie(nullptr)->sync_with_stdio(false);
   
