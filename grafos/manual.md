@@ -2,7 +2,7 @@
 
 Inicialização:
 
-``Graoh<T> g(n);`` onde n é o tamanho do vértices no seu grafo e T é o tipo da dos valores no fluxo (int, long long, etc..    
+``Graoh<T> g(n);`` onde n é o tamanho do vértices no seu grafo e T é o tipo dos valores no fluxo (int, long long, etc..    
 
 Uso:
 
