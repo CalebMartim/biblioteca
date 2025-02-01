@@ -6,16 +6,16 @@ template <class T> using V = vector<T>;
 
 struct Graph{
   int n;
-  V<V<int>> g;
+  V<V<int>> adj;
 
   Graph(int N){
     n = N;
-    g.resize(n);
+    adj.resize(n);
   }
 
   void add_edge(int u, int v, bool undirected = true){
-    g[u].pb(v);
+    adj[u].pb(v);
     if (undirected) 
-      g[v].pb(u);
+      adj[v].pb(u);
   }
 };
