@@ -9,7 +9,7 @@ struct query{
  
 template <typename T>
 T add(T a, T b) {
-  return a + b;
+  return a + b; //#!
 }
  
 template <typename T>
@@ -25,7 +25,7 @@ vector<T> solve(vector<T> &a, vector<query> &queries){
   for (int idx = 0; idx < q; ++idx) {
     int l = queries[idx].l, r = queries[idx].r;
     int bl = l / s, br = r / s;
-    T sum = 0;
+    T sum = 0; //#!
     if (bl == br) {
       for (int i = l; i <= r; ++i) 
         sum = add(sum, a[i]);
