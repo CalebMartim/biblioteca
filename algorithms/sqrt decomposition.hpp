@@ -13,7 +13,7 @@ T add(T a, T b) {
 }
  
 template <typename T>
-vector<T> solve(vector<T> &a, vector<query> queries){
+vector<T> solve(vector<T> &a, vector<query> &queries){
   int n = (int) a.size(); 
   int q = (int) queries.size(); 
   int s = (int) sqrt(n) + 1;
