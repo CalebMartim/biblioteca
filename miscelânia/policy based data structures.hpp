@@ -1,13 +1,14 @@
-#include <ext/pb_ds/assoc_container.hpp>
-#include <ext/pb_ds/tree_policy.hpp>
-#include <chrono>
 using namespace std;
-using namespace __gnu_pbds;
 
 // Ordered Set //
+#include <ext/pb_ds/assoc_container.hpp>
+#include <ext/pb_ds/tree_policy.hpp>
+using namespace __gnu_pbds;
+
 typedef tree<int,null_type,less<int>,rb_tree_tag,tree_order_statistics_node_update> ordered_set;
 
 // GP Hash Table //
+#include <chrono>
 struct custom_hash {
     static uint64_t splitmix64(uint64_t x) {
         x += 0x9e3779b97f4a7c15;
@@ -22,4 +23,3 @@ struct custom_hash {
     }
 };
 typedef gp_hash_table<int, int, custom_hash> hash_table;
-
