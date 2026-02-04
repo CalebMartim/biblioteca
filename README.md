@@ -13,3 +13,5 @@ Um comentário composto por ``#!`` na linha de um código indica que você pode 
   - DFS Tree
   - Dijkstra
   - LCA
+  - nCk
+  - BIT
